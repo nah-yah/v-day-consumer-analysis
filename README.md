@@ -24,10 +24,10 @@ This dashboard provides strategic insights into the U.S. Valentine's Day market 
 
 ### Prerequisites
 ```r
-# Required R version
+# required R version
 R >= 4.0
 
-# Required packages
+# required packages
 install.packages(c(
   "shiny", "readxl", "readr", "dplyr", "tidyr", 
   "tibble", "ggplot2", "plotly", "scales", "purrr", 
@@ -197,7 +197,7 @@ data <- generate_forecasts(data)
 
 ### 2. **Reactive caching**
 ```r
-# Filtered data cached per user session
+# filtered data cached per user session
 rv <- create_reactive_values(input, data)
 ```
 
@@ -219,7 +219,7 @@ rv <- create_reactive_values(input, data)
 
 1. **Create the plot function** in appropriate server file:
    ```r
-   # In server/server_plots_main.R
+   # in server/server_plots_main.R
    generate_main_plots <- function(output, rv, data) {
      output$my_new_plot <- renderPlotly({
        df <- data$my_dataset
@@ -231,7 +231,7 @@ rv <- create_reactive_values(input, data)
 
 2. **Add to UI** in appropriate UI file:
    ```r
-   # In ui/ui_bigpicture.R
+   # in ui/ui_bigpicture.R
    wrap_chart(
      plotlyOutput("my_new_plot", height = CHART_HEIGHT),
      "My new chart title",
@@ -280,7 +280,6 @@ rv <- create_reactive_values(input, data)
 
 - **Data:** National Retail Federation, Suraj Das on Kaggle
 - **Technical stack:** Shiny, Plotly, tidyverse ecosystem
-- **Legend box fix:** Plotly annotation approach (see `LEGEND_BOX_FIX.md`)
 
 ---
 
