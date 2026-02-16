@@ -208,7 +208,6 @@ rv <- create_reactive_values(input, data)
 
 ### 3. **Lazy rendering**
 - Charts render only when tab is active
-- Hidden tabs don't consume resources
 - Plotly's built-in optimization
 
 ---
@@ -263,7 +262,7 @@ rv <- create_reactive_values(input, data)
 
 ---
 
-## Data Sources
+## Data sources
 
 **Primary:** National Retail Federation (NRF) annual Valentine's Day surveys
 - Survey period: 2009-2022
