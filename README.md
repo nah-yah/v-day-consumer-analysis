@@ -263,7 +263,7 @@ rv <- create_reactive_values(input, data)
 
 ---
 
-## 📊 Data Sources
+## Data Sources
 
 **Primary:** National Retail Federation (NRF) annual Valentine's Day surveys
 - Survey period: 2009-2022
@@ -297,5 +297,3 @@ rv <- create_reactive_values(input, data)
 **Built using R Shiny**
 
 *Last updated: February 2026*
-
-*Dashboard version: 1.0.0*
