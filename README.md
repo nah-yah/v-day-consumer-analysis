@@ -20,7 +20,7 @@ This dashboard provides strategic insights into the U.S. Valentine's Day market 
 
 ---
 
-## Quick Start
+## Quick start
 
 ### Prerequisites
 ```r
@@ -70,7 +70,7 @@ The dashboard will open in your default browser at `http://localhost:XXXX`
 ## Project structure
 
 ```
-valentines_dashboard/
+v-day-consumer-analysis/
 ├── app.R                          # Main app
 │
 ├── data/                          # Data files (not tracked in git)
@@ -100,10 +100,8 @@ valentines_dashboard/
 │   ├── server_plots_forecast.R    # Forecast plots with legend fix
 │   └── server_downloads.R         # CSV download handlers
 │
-└── docs/                          # Documentation
-    ├── README.md                  # This file
-    ├── migration_guide.txt        # Migration from monolithic app
-    └── legend_box_fix.md          # Forecast legend implementation
+├── README.md                  # This file
+└── manifest.json
 ```
 
 ---
